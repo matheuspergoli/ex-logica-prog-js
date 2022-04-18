@@ -6,9 +6,14 @@ function contarEstrelas(event) {
 
   const numero = Number(form.querySelector('#numero').value)
 
+  const arr = []
+
   for (let i = 1; i <= numero; i++) {
-    resp.innerText += `_*_`
+    arr.push('*')
   }
+
+  const str = arr.join('-')
+  resp.innerText = str
 }
 
 form.addEventListener('submit', contarEstrelas)
