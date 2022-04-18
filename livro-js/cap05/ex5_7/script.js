@@ -4,8 +4,6 @@ const resp = document.querySelector('#output-um')
 function contar(event) {
   event.preventDefault()
 
-  anos++
-
   const numChinchilas = Number(form.querySelector('#numero-chinchilas').value)
   const numAnos = Number(form.querySelector('#numero-anos').value)
 
