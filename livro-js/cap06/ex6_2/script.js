@@ -9,7 +9,7 @@ let numeroDeChances = 6
 let numerosApostados = []
 
 const numeroSorteado = Math.floor(Math.random() * (100 - 1) + 1)
-console.log(numeroSorteado)
+
 function jogarDeNovo() {
   const condicaoJogarDeNovo = confirm('Deseja jogar novamente?')
 
