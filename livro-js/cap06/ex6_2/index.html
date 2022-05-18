@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    p:nth-of-type(3) {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Jogo Descubra o Número</h1>
+  <form>
+    <label for="numero">Número: </label>
+    <input type="number" min="1" max="100" required data-aposta>
+    <button type="submit">Apostar</button>
+  </form>
+  <p data-erros>Erros: 0</p>
+  <p data-chances>Chances: 6</p>
+  <p>Dica: É um número entre 1 e 100</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
