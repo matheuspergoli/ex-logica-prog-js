@@ -19,6 +19,14 @@ function handleSubmit(event) {
 form.addEventListener('submit', handleSubmit)
 
 function listarTimes() {
-  if ()
+  if (times.length === 0) {
+    alert('Não há times registrados.')
+    return
+  }
+
+  const lista = times.reduce((acc, time) => {
+    return acc + `<p>${time}</p>`
+  }, '')
+  div.innerHTML = lista
 }
 btnListar.addEventListener('click', listarTimes)
