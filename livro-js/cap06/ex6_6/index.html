@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div-numeros {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .div-aviso {
+      font-weight: bold;
+      font-size: 1.6rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Programa Números em Ordem</h1>
+  <form>
+    <p>
+      <label for="numero">Número:</label>
+      <input type="number" id="numero" name="numero" min="0" max="100" required>
+      <button type="submit">Adicionar</button>
+    </p>
+    <button type="button">Verificar Ordem</button>
+  </form>
+  <p class="div-numeros">Números: 4, 10, 15, 12, 24</p>
+  <!-- <p class="div-aviso">Atenção... Números não estão em ordem crescente</p> -->
+  <script src="script.js"></script>
+</body>
+</html>
